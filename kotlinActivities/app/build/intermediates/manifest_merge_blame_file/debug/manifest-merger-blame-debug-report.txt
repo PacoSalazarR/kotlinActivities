@@ -11,7 +11,7 @@
 9-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:5:5-27:19
 12        android:allowBackup="true"
 12-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -30,22 +30,34 @@
 21        android:theme="@style/Theme.KotlinActivities" >
 21-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:11:9-54
 22        <activity
-22-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:12:9-20:20
-23            android:name="com.example.kotlinactivities.MainActivity"
-23-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:13:13-41
-24            android:exported="true" >
+22-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:12:9-14:39
+23            android:name="com.example.kotlinactivities.MainActivity3"
+23-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:13:13-42
+24            android:exported="true" />
 24-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:14:13-36
-25            <intent-filter>
-25-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:15:13-19:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:16:17-69
-26-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:16:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:18:17-77
-28-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:18:27-74
-29            </intent-filter>
-30        </activity>
-31    </application>
-32
-33</manifest>
+25        <activity
+25-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:15:9-17:39
+26            android:name="com.example.kotlinactivities.MainActivity2"
+26-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:16:13-42
+27            android:exported="true" />
+27-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:17:13-36
+28        <activity
+28-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:18:9-26:20
+29            android:name="com.example.kotlinactivities.MainActivity"
+29-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:19:13-41
+30            android:exported="true" >
+30-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:20:13-36
+31            <intent-filter>
+31-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:21:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:22:17-69
+32-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:22:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:24:17-77
+34-->C:\Users\franp\OneDrive\Documentos\universidad\5 sem\android\kotlinActivities\kotlinActivities\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

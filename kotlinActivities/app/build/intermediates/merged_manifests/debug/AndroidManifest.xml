@@ -20,6 +20,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.KotlinActivities" >
         <activity
+            android:name="com.example.kotlinactivities.MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kotlinactivities.MainActivity2"
+            android:exported="true" />
+        <activity
             android:name="com.example.kotlinactivities.MainActivity"
             android:exported="true" >
             <intent-filter>

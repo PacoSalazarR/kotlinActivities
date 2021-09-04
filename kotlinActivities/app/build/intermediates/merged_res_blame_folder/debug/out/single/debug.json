@@ -24,6 +24,10 @@
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main3.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\layout\\activity_main3.xml"
+    },
+    {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -34,6 +38,10 @@
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main2.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\layout\\activity_main2.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
