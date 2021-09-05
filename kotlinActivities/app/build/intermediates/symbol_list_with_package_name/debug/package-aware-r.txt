@@ -2564,6 +2564,17 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string text_element_1
+string text_element_10
+string text_element_2
+string text_element_3
+string text_element_4
+string text_element_5
+string text_element_6
+string text_element_7
+string text_element_8
+string text_element_9
+string text_goBack
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

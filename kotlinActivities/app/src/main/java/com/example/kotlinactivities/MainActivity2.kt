@@ -11,10 +11,14 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 
         initViews()
+        element = intent.getParcelableExtra<Element>("selectedCrop")?: Element()
+        Toast.makeText(this, "parameter " + getString(element.texto!!.text), Toast.LENGTH_SHORT).show()
     }
+
 
     private lateinit var ivSecondary: ImageView
     private lateinit var btnBack: Button
+    private lateinit var element: Element
 
     private fun initViews() {
         ivSecondary = findViewById(R.id.imViewSecundario)

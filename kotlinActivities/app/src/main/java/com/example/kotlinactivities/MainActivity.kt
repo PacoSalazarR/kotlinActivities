@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CpuUsageInfo
 import android.widget.*
+import com.example.kotlinactivities.Element.Companion.elements
 import java.nio.file.attribute.GroupPrincipal
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initViews()
-
     }
 
     private lateinit var ivPrincipal: ImageView
@@ -22,12 +22,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var  ivNext: ImageView
     private lateinit var  btnmoreInfo: Button
 
+
+    var counter: Int = 0
+
     private fun initViews(){
         ivPrincipal = findViewById(R.id.imViewPrincipal)
         ivBack = findViewById(R.id.imViewBack)
         ivNext = findViewById(R.id.imViewNext)
         btnmoreInfo = findViewById(R.id.btnMasInfo)
         setMainActivity1Listeners()
+
     }
 
     private fun setMainActivity1Listeners() {
@@ -43,15 +47,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun previousImage() {
-        Toast.makeText(this, "previous", Toast.LENGTH_SHORT).show()
+        if(counter == 0)
+            counter = 9
+        else
+            counter--
+        Toast.makeText(this, "previous" +  elements[counter].texto, Toast.LENGTH_SHORT).show()
     }
 
     private fun nextImage() {
-        Toast.makeText(this, "next", Toast.LENGTH_SHORT).show()
+        if(counter == 9)
+            counter = 0
+        else
+            counter++
+        Toast.makeText(this, "next" + elements[counter].texto, Toast.LENGTH_SHORT).show()
     }
 
     private fun nextActivity() {
-        val intent = Intent(this, MainActivity2::class.java)
+        val intent = Intent(this, MainActivity2::class.java).apply {
+            putExtra("selectedCrop", elements[counter])
+        }
         startActivity(intent)
     }
 }
