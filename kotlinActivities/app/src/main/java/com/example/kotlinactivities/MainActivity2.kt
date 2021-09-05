@@ -11,18 +11,22 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 
         initViews()
-        element = intent.getParcelableExtra<Element>("selectedCrop")?: Element()
-        Toast.makeText(this, "parameter " + getString(element.texto!!.text), Toast.LENGTH_SHORT).show()
+        element = intent.getParcelableExtra<Element>("selectedFood")?: Element()
+        ivSecondary.setImageResource(element.image!!.resource)
+        txtvSecondary.setText(element.texto!!.text)
     }
 
 
     private lateinit var ivSecondary: ImageView
     private lateinit var btnBack: Button
+    private lateinit var txtvSecondary: TextView
     private lateinit var element: Element
 
     private fun initViews() {
         ivSecondary = findViewById(R.id.imViewSecundario)
         btnBack = findViewById(R.id.btnAtras1)
+        txtvSecondary = findViewById(R.id.txtViewSecundario)
+
         setMainActivity2Listeners()
     }
 
@@ -36,7 +40,9 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun nextActivity() {
-        val intent = Intent(this, MainActivity3::class.java)
+        val intent = Intent(this, MainActivity3::class.java).apply {
+            putExtra("selectedFood", element)
+        }
         startActivity(intent)
     }
 

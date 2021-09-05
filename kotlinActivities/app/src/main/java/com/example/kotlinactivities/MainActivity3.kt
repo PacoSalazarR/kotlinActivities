@@ -10,10 +10,13 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
 
         initViews()
+        element = intent.getParcelableExtra<Element>("selectedFood")?: Element()
+        ivTertiary.setImageResource(element.image!!.resource)
     }
 
     private lateinit var ivTertiary: ImageView
     private lateinit var btnBack2: Button
+    private lateinit var element: Element
 
     private fun initViews() {
         ivTertiary = findViewById(R.id.imViewTerciario)

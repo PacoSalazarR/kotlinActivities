@@ -32,6 +32,12 @@ class MainActivity : AppCompatActivity() {
         btnmoreInfo = findViewById(R.id.btnMasInfo)
         setMainActivity1Listeners()
 
+        setActualFood()
+
+    }
+
+    private fun setActualFood() {
+        ivPrincipal.setImageResource(elements[counter].image!!.resource)
     }
 
     private fun setMainActivity1Listeners() {
@@ -51,7 +57,8 @@ class MainActivity : AppCompatActivity() {
             counter = 9
         else
             counter--
-        Toast.makeText(this, "previous" +  elements[counter].texto, Toast.LENGTH_SHORT).show()
+        setActualFood()
+        makeToast()
     }
 
     private fun nextImage() {
@@ -59,13 +66,18 @@ class MainActivity : AppCompatActivity() {
             counter = 0
         else
             counter++
-        Toast.makeText(this, "next" + elements[counter].texto, Toast.LENGTH_SHORT).show()
+        setActualFood()
+        makeToast()
     }
 
     private fun nextActivity() {
         val intent = Intent(this, MainActivity2::class.java).apply {
-            putExtra("selectedCrop", elements[counter])
+            putExtra("selectedFood", elements[counter])
         }
         startActivity(intent)
+    }
+
+    private fun makeToast() {
+        Toast.makeText(this, elements[counter].name, Toast.LENGTH_SHORT).show()
     }
 }

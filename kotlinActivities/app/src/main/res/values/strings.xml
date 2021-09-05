@@ -2,14 +2,14 @@
     <string name="app_name">kotlinActivities</string>
 
     <string name="text_goBack">Atrás</string>
-    <string name="text_element_1">element_1</string>
-    <string name="text_element_2">element_2</string>
-    <string name="text_element_3">element_3</string>
-    <string name="text_element_4">element_4</string>
-    <string name="text_element_5">element_5</string>
-    <string name="text_element_6">element_6</string>
-    <string name="text_element_7">element_7</string>
-    <string name="text_element_8">element_8</string>
-    <string name="text_element_9">element_9</string>
-    <string name="text_element_10">element_10</string>
+    <string name="text_element_1">La Cereza es un tipo de fruta en Stardew Valley. Se recolecta en primavera en los cerezos, que crecen a partir de brotes de cerezo y maduran completamente en 28 días después de plantarlos</string>
+    <string name="text_element_2">El Chile es un cultivo en Stardew Valley. Crece a partir de Semillas de chile después de 5 días. Cuando se cosecha, cada planta da 1 Chile cada 3 días, con la posibilidad de obtener chiles extra.</string>
+    <string name="text_element_3">La Fresa es un cultivo en Stardew Valley. Crece a partir de Semillas de fresa después de 8 días. Las semillas sólo se pueden comprar en el Festival del huevo.</string>
+    <string name="text_element_4">La Manzana es un tipo de fruta en Stardew Valley. Se recolecta en otoño en los manzanos, que crecen a partir de brotes de manzano y maduran completamente en 28 días después de plantarlos.</string>
+    <string name="text_element_5">La Naranja es un tipo de fruta en Stardew Valley. Se recolecta en verano en los naranjos, que crecen a partir de brotes de naranjo y maduran completamente en 28 días después de plantarlos.</string>
+    <string name="text_element_6">El queso es un producto artesanal producido con la prensa de queso. Tarda aproximadamente 3.3 horas en procesarse. Utiliza leche para producir queso de calidad normal y leche XXL para producir queso de calidad oro.</string>
+    <string name="text_element_7">La Uva es un cultivo en Stardew Valley. Crece a partir de Kit de uvas después de 10 días. También pueden ser recolectadas en Pueblo Pelícano en el Verano o crecer a partir de Semillas veraniegas.</string>
+    <string name="text_element_8">Los Pescados son capturados cuando se está pescando usando una caña de pescar. Se pueden encontrar en el océano, el lago o el río y algunos sólo aparecen durante la noche o el día, o cuando llueve.</string>
+    <string name="text_element_9">La Pizza es un plato cocinado. Se prepara usando la cocina dentro de una granja mejorada. También está disponible en Salón Fruta Estelar por 600.</string>
+    <string name="text_element_10">La Zanahoria cavernaria se puede recolectar en Las Minas. También se puede encontrar en cubos de basura. </string>
 </resources>
