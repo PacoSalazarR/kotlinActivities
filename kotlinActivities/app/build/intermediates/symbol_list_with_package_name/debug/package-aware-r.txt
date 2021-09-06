@@ -1788,8 +1788,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable fresa
 drawable ic_clock_black_24dp
+drawable ic_empty_star
 drawable ic_flecha_derecha
 drawable ic_flecha_izquierda
+drawable ic_full_star
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2057,6 +2059,7 @@ id imViewBack
 id imViewNext
 id imViewPrincipal
 id imViewSecundario
+id imViewStar
 id imViewTerciario
 id image
 id immediateStop

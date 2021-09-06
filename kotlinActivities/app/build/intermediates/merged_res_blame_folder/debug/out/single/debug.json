@@ -32,12 +32,12 @@
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-ldpi\\cerezas.png"
     },
     {
-        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pizza.png.flat",
-        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-xhdpi\\pizza.png"
-    },
-    {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_queso.xml.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_queso.xml"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pizza.png.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-xhdpi\\pizza.png"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_naranja.xml.flat",
@@ -82,6 +82,10 @@
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_pizza.png.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-xxhdpi\\pizza.png"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_empty_star.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_empty_star.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -142,6 +146,10 @@
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_chile.png.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-mdpi\\chile.png"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_full_star.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_full_star.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_manzana.xml.flat",

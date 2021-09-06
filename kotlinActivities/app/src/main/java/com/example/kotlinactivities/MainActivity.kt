@@ -2,6 +2,7 @@ package com.example.kotlinactivities
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CpuUsageInfo
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         initViews()
     }
 
@@ -22,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var  ivNext: ImageView
     private lateinit var  btnmoreInfo: Button
 
-
     var counter: Int = 0
 
     private fun initViews(){
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         ivBack = findViewById(R.id.imViewBack)
         ivNext = findViewById(R.id.imViewNext)
         btnmoreInfo = findViewById(R.id.btnMasInfo)
+
         setMainActivity1Listeners()
 
         setActualFood()
@@ -50,7 +52,10 @@ class MainActivity : AppCompatActivity() {
         btnmoreInfo.setOnClickListener {
             nextActivity()
         }
+
     }
+
+
 
     private fun previousImage() {
         if(counter == 0)

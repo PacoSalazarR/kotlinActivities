@@ -1787,8 +1787,10 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable fresa 0x7f070093
 int drawable ic_clock_black_24dp 0x7f070065
+int drawable ic_empty_star 0x7f07009d
 int drawable ic_flecha_derecha 0x7f07009b
 int drawable ic_flecha_izquierda 0x7f07009c
+int drawable ic_full_star 0x7f07009e
 int drawable ic_keyboard_black_24dp 0x7f070066
 int drawable ic_launcher_background 0x7f070067
 int drawable ic_launcher_foreground 0x7f070068
@@ -2056,6 +2058,7 @@ int id imViewBack 0x7f0801d3
 int id imViewNext 0x7f0801d4
 int id imViewPrincipal 0x7f0801d5
 int id imViewSecundario 0x7f0801d6
+int id imViewStar 0x7f0801db
 int id imViewTerciario 0x7f0801d7
 int id image 0x7f0800d2
 int id immediateStop 0x7f0800d3
