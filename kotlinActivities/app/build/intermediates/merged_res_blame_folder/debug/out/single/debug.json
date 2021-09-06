@@ -32,12 +32,12 @@
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-ldpi\\cerezas.png"
     },
     {
-        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_queso.xml.flat",
-        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_queso.xml"
-    },
-    {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_pizza.png.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-xhdpi\\pizza.png"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_queso.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_queso.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_naranja.xml.flat",
@@ -112,6 +112,10 @@
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-xxxhdpi\\pescado.png"
     },
     {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_flecha_derecha.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_flecha_derecha.xml"
+    },
+    {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_fresa.png.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-mdpi\\fresa.png"
     },
@@ -166,6 +170,10 @@
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_flecha_izquierda.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_flecha_izquierda.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_cerezas.png.flat",

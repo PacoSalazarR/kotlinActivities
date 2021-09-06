@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">kotlinActivities</string>
 
+    <string name="text_more_info">Más información</string>
     <string name="text_goBack">Atrás</string>
     <string name="text_element_1">La Cereza es un tipo de fruta en Stardew Valley. Se recolecta en primavera en los cerezos, que crecen a partir de brotes de cerezo y maduran completamente en 28 días después de plantarlos</string>
     <string name="text_element_2">El Chile es un cultivo en Stardew Valley. Crece a partir de Semillas de chile después de 5 días. Cuando se cosecha, cada planta da 1 Chile cada 3 días, con la posibilidad de obtener chiles extra.</string>

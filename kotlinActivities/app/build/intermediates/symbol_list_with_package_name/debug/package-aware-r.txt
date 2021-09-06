@@ -1149,6 +1149,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_gray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1787,6 +1788,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable fresa
 drawable ic_clock_black_24dp
+drawable ic_flecha_derecha
+drawable ic_flecha_izquierda
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2585,6 +2588,7 @@ string text_element_7
 string text_element_8
 string text_element_9
 string text_goBack
+string text_more_info
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

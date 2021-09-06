@@ -1148,6 +1148,7 @@ int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
 int color highlighted_text_material_dark 0x7f05005d
 int color highlighted_text_material_light 0x7f05005e
+int color light_gray 0x7f0500d5
 int color material_blue_grey_800 0x7f05005f
 int color material_blue_grey_900 0x7f050060
 int color material_blue_grey_950 0x7f050061
@@ -1786,6 +1787,8 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable fresa 0x7f070093
 int drawable ic_clock_black_24dp 0x7f070065
+int drawable ic_flecha_derecha 0x7f07009b
+int drawable ic_flecha_izquierda 0x7f07009c
 int drawable ic_keyboard_black_24dp 0x7f070066
 int drawable ic_launcher_background 0x7f070067
 int drawable ic_launcher_foreground 0x7f070068
@@ -2584,6 +2587,7 @@ int string text_element_7 0x7f0e0070
 int string text_element_8 0x7f0e0071
 int string text_element_9 0x7f0e0072
 int string text_goBack 0x7f0e0073
+int string text_more_info 0x7f0e0074
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style AndroidThemeColorAccentYellow 0x7f0f0002
