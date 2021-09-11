@@ -20,10 +20,14 @@ class MainActivity2 : AppCompatActivity() {
         initViews()
         element = intent.getParcelableExtra<Element>("selectedFood")?: Element()
         if(food.name.isNotEmpty()){
-            if(food.name.equals(element.name))
+            if(food.name.equals(element.name)) {
                 ivStar.setImageResource(R.drawable.ic_full_star)
-            else
+                flag = true
+            }
+            else {
                 ivStar.setImageResource(R.drawable.ic_empty_star)
+                flag = false
+            }
         }
         ivSecondary.setImageResource(element.image!!.resource)
         txtvSecondary.setText(element.texto!!.text)
@@ -34,6 +38,7 @@ class MainActivity2 : AppCompatActivity() {
     private val PREFS = "MY_PREFERENCES"
     private val USER_PREFS = "FAV_FOOD"
     private lateinit var preferences: SharedPreferences
+    var flag: Boolean = false
 
     private val moshi = Moshi.Builder().build()
 
@@ -75,8 +80,19 @@ class MainActivity2 : AppCompatActivity() {
 
 
     private fun saveFavoriteFood(element: Element) {
-        preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
-        ivStar.setImageResource(R.drawable.ic_full_star)
+        if(!flag){
+            preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
+            ivStar.setImageResource(R.drawable.ic_full_star)
+            flag = true
+        }
+        else{
+            var vacio: Element
+            vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9)
+            preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(vacio)).apply()
+            ivStar.setImageResource(R.drawable.ic_empty_star)
+            flag = false
+        }
+
     }
 
     private fun nextActivity() {
