@@ -13,4 +13,6 @@
     <string name="text_element_8">Los Pescados son capturados cuando se está pescando usando una caña de pescar. Se pueden encontrar en el océano, el lago o el río y algunos sólo aparecen durante la noche o el día, o cuando llueve.</string>
     <string name="text_element_9">La Pizza es un plato cocinado. Se prepara usando la cocina dentro de una granja mejorada. También está disponible en Salón Fruta Estelar por 600.</string>
     <string name="text_element_10">La Zanahoria cavernaria se puede recolectar en Las Minas. También se puede encontrar en cubos de basura. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
