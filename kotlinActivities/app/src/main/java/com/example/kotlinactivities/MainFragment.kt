@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.kotlinactivities.Element.Companion.elements
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -60,7 +61,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             makeToast()
         }
         btnmoreInfo.setOnClickListener {
-            //nextActivity()
+            nextActivity()
         }
 
     }
@@ -82,10 +83,21 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
     private fun nextActivity() {
-        val intent = Intent(requireContext(), MainFragment::class.java).apply {
+        /*val intent = Intent(requireContext(), SecondFragment::class.java).apply {
             putExtra("selectedFood", Element.elements[counter])
         }
-        startActivity(intent)
+        startActivity(intent)*/
+        val newFragment: Fragment = SecondFragment()
+        val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+        transaction.replace(R.id.container, newFragment)
+        /*val intent = Intent(requireContext(), SecondFragment::class.java).apply {
+            putExtra("selectedFood", Element.elements[counter])
+        }
+        transaction.apply {
+            intent
+        }*/
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
     private fun makeToast() {

@@ -2415,6 +2415,8 @@ int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout fragment_main 0x7f0b0073
+int layout fragment_second 0x7f0b007d
+int layout fragment_third 0x7f0b007e
 int layout material_chip_input_combo 0x7f0b002d
 int layout material_clock_display 0x7f0b002e
 int layout material_clock_display_divider 0x7f0b002f

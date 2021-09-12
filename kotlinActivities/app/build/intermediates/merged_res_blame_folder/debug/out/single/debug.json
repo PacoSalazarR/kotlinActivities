@@ -28,6 +28,10 @@
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_cerezas.png.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable-ldpi\\cerezas.png"
     },
@@ -154,6 +158,10 @@
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_manzana.xml.flat",
         "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\drawable\\ic_manzana.xml"
+    },
+    {
+        "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_third.xml.flat",
+        "source": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\src\\main\\res\\layout\\fragment_third.xml"
     },
     {
         "merged": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_zanahoria.xml.flat",
