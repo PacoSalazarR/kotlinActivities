@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
         <ImageView
-            android:id="@+id/imViewPrincipal"
+            android:id="@+id/imViewPrincipalF"
             android:layout_width="225dp"
             android:layout_height="350dp"
             android:background="@color/light_gray"
@@ -24,7 +24,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/imViewPrincipal"
+            app:layout_constraintEnd_toStartOf="@id/imViewPrincipalF"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="20dp"/>
@@ -36,7 +36,7 @@
             android:layout_height="60dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imViewPrincipal"
+            app:layout_constraintStart_toEndOf="@id/imViewPrincipalF"
             android:layout_marginStart="20dp"/>
 
         <Button
@@ -46,8 +46,8 @@
             android:layout_height="70dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imViewPrincipal"/>
+            app:layout_constraintTop_toBottomOf="@+id/imViewPrincipalF"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
+
 </FrameLayout>

@@ -15,10 +15,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        addWelcomeFragment = savedInstanceState?.getBoolean(KEY, true) ?: true
+        if(addWelcomeFragment)
+            supportFragmentManager.beginTransaction().add(R.id.container, MainFragment()).commit()
 
         initViews()
     }
 
+    //region FRAGMENTS
+    private val KEY = "STATE_KEY"
+    private var addWelcomeFragment: Boolean = true
+
+    //endregion
+
+    //region ACTIVITIES
     private lateinit var ivPrincipal: ImageView
     private lateinit var  ivBack: ImageView
     private lateinit var  ivNext: ImageView
@@ -55,8 +65,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-
     private fun previousImage() {
         if(counter == 0)
             counter = 9
@@ -85,4 +93,5 @@ class MainActivity : AppCompatActivity() {
     private fun makeToast() {
         Toast.makeText(this, elements[counter].name, Toast.LENGTH_SHORT).show()
     }
+    //endregion
 }
