@@ -2,25 +2,28 @@ package com.example.kotlinactivities
 
 import android.content.Context
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.kotlinactivities.Element.Companion.elements
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     private val TEXT_KEY = "TEXT_KEY"
+    private val KEY_PARSE_DATA = "SAVED_FOOD"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         Toast.makeText(
             context,
             savedInstanceState?.getString(TEXT_KEY, "") ?: "",
             Toast.LENGTH_LONG
         ).show()
-
 
     }
 
@@ -29,11 +32,17 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         initViews()
     }
 
-    var counter: Int = 0
+    private var counter: Int = 0
+    //
+
+    private var bundle: Bundle? = null
+
+    //
     private lateinit var ivPrincipal: ImageView
     private lateinit var  ivBack: ImageView
     private lateinit var  ivNext: ImageView
     private lateinit var  btnmoreInfo: Button
+    private lateinit var actualElement: Element
 
 
     private fun initViews(){
@@ -49,6 +58,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     private fun setActualFood() {
         ivPrincipal.setImageResource(elements[counter].image!!.resource)
+        actualElement = elements[counter]
     }
 
     private fun setMainActivity1Listeners() {
@@ -72,6 +82,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         else
             counter--
         setActualFood()
+        //playSound(R.raw.svfishbite)
     }
 
     private fun nextImage() {
@@ -83,19 +94,14 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
     private fun nextActivity() {
-        /*val intent = Intent(requireContext(), SecondFragment::class.java).apply {
-            putExtra("selectedFood", Element.elements[counter])
+        val newFragment: Fragment = SecondFragment().apply {
+            arguments = Bundle().apply {
+                putParcelable(KEY_PARSE_DATA, actualElement)
+            }
         }
-        startActivity(intent)*/
-        val newFragment: Fragment = SecondFragment()
         val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+
         transaction.replace(R.id.container, newFragment)
-        /*val intent = Intent(requireContext(), SecondFragment::class.java).apply {
-            putExtra("selectedFood", Element.elements[counter])
-        }
-        transaction.apply {
-            intent
-        }*/
         transaction.addToBackStack(null)
         transaction.commit()
     }
@@ -103,6 +109,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private fun makeToast() {
         Toast.makeText(requireContext(), elements[counter].name, Toast.LENGTH_SHORT).show()
     }
+
+    private fun playSound(sound: Int) = MediaPlayer.create(requireContext(), sound).start()
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.run {

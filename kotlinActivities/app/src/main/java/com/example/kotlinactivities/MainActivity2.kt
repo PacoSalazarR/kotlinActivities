@@ -86,8 +86,7 @@ class MainActivity2 : AppCompatActivity() {
             flag = true
         }
         else{
-            var vacio: Element
-            vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9)
+            var vacio: Element = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9)
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(vacio)).apply()
             ivStar.setImageResource(R.drawable.ic_empty_star)
             flag = false

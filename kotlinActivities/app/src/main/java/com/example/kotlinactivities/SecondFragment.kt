@@ -17,25 +17,13 @@ import java.lang.Exception
 class SecondFragment : Fragment(R.layout.fragment_second) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /* this = your fragment
-        //val prefs = MainFragment!!.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        //food = getFavoriteFood()
 
-        //initViews()
-        //element = intent.getParcelableExtra<Element>("selectedFood")?: Element()
-        if(food.name.isNotEmpty()){
-            if(food.name.equals(element.name)) {
-                ivStar.setImageResource(R.drawable.ic_full_star)
-                flag = true
-            }
-            else {
-                ivStar.setImageResource(R.drawable.ic_empty_star)
-                flag = false
-            }
-        }
-        ivSecondary.setImageResource(element.image!!.resource)
-        txtvSecondary.setText(element.texto!!.text)*/
     }
+
+    private val KEY_PARSE_DATA = "SAVED_FOOD"
+    private var bundle: Bundle? = null
+    private var element: Element? = null
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
@@ -53,7 +41,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
     private lateinit var ivSecondary: ImageView
     private lateinit var btnBack: Button
     private lateinit var txtvSecondary: TextView
-    private lateinit var element: Element
+
     private lateinit var ivStar: ImageView
 
     private fun initViews() {
@@ -62,8 +50,15 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         txtvSecondary = requireView().findViewById<View>(R.id.txtViewSecundario) as TextView
         ivStar = requireView().findViewById<View>(R.id.imViewStar)  as ImageView
 
+
+        bundle = this.arguments;
+        element = bundle?.getParcelable<Element>(KEY_PARSE_DATA)
+        ivSecondary.setImageResource(element?.image!!.resource)//R.drawable.ic_full_star
+
         setMainActivity2Listeners()
     }
+
+    var counter: Int = 0
 
     private fun setMainActivity2Listeners() {
         ivSecondary.setOnClickListener {
@@ -86,8 +81,8 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
             }
         } ?: Element()
 
-
-    private fun saveFavoriteFood(element: Element) {
+// ?
+    private fun saveFavoriteFood(element: Element?) {
         if(!flag){
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
             ivStar.setImageResource(R.drawable.ic_full_star)
@@ -104,11 +99,11 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
     }
 
     private fun nextActivity() {
-        /*val intent = Intent(this, MainActivity3::class.java).apply {
-            putExtra("selectedFood", element)
+        val newFragment: Fragment = ThirdFragment().apply {
+            arguments = Bundle().apply {
+                putParcelable(KEY_PARSE_DATA, element)
+            }
         }
-        startActivity(intent)*/
-        val newFragment: Fragment = ThirdFragment()
         val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
         transaction.replace(R.id.container, newFragment)
         transaction.addToBackStack(null)
