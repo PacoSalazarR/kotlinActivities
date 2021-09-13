@@ -15,10 +15,6 @@ import com.squareup.moshi.Moshi
 import java.lang.Exception
 
 class SecondFragment : Fragment(R.layout.fragment_second) {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     private val KEY_PARSE_DATA = "SAVED_FOOD"
     private var bundle: Bundle? = null
@@ -26,7 +22,22 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        preferences = activity?.getSharedPreferences(PREFS, Context.MODE_PRIVATE)!!
+        food = getFavoriteFood()
         initViews()
+
+        if(food.name.isNotEmpty()){
+            if(food.name.equals(element?.name)) {
+                ivStar.setImageResource(R.drawable.ic_full_star)
+                flag = true
+            }
+            else {
+                ivStar.setImageResource(R.drawable.ic_empty_star)
+                flag = false
+            }
+        }
+        ivSecondary.setImageResource(element?.image!!.resource)
+        txtvSecondary.setText(element?.texto!!.text)
     }
 
     private lateinit var food: Element
@@ -81,7 +92,6 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
             }
         } ?: Element()
 
-// ?
     private fun saveFavoriteFood(element: Element?) {
         if(!flag){
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
@@ -89,8 +99,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
             flag = true
         }
         else{
-            var vacio: Element
-            vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9)
+            var vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9)
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(vacio)).apply()
             ivStar.setImageResource(R.drawable.ic_empty_star)
             flag = false

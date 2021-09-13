@@ -1,4 +1,4 @@
-#Sun Sep 12 23:00:29 CDT 2021
+#Sun Sep 12 23:15:29 CDT 2021
 base.2=C\:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.2=1/classes.dex
 base.1=C\:\\Users\\franp\\OneDrive\\Documentos\\universidad\\5 sem\\android\\kotlinActivities\\kotlinActivities\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
