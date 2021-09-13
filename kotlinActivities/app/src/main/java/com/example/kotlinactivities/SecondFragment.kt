@@ -1,15 +1,12 @@
 package com.example.kotlinactivities
 
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.squareup.moshi.Moshi
@@ -29,24 +26,22 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         initViews()
 
         if(favSound.name.isNotEmpty()){
-            if(favSound.name.equals(element?.name)) {
+            flagSound = if(favSound.name == element?.name) {
                 ivHeart.setImageResource(R.drawable.ic_full_heart)
-                flagSound = true
-            }
-            else {
+                true
+            } else {
                 ivHeart.setImageResource(R.drawable.ic_empty_heart)
-                flagSound = false
+                false
             }
         }
 
         if(food.name.isNotEmpty()){
-            if(food.name.equals(element?.name)) {
+            flag = if(food.name == element?.name) {
                 ivStar.setImageResource(R.drawable.ic_full_star)
-                flag = true
-            }
-            else {
+                true
+            } else {
                 ivStar.setImageResource(R.drawable.ic_empty_star)
-                flag = false
+                false
             }
         }
         ivSecondary.setImageResource(element?.image!!.resource)
@@ -85,8 +80,6 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         setMainActivity2Listeners()
     }
 
-    var counter: Int = 0
-
     private fun setMainActivity2Listeners() {
         ivSecondary.setOnClickListener {
             nextActivity()
@@ -120,32 +113,28 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         } ?: Element()
 
     private fun saveFavoriteSound(element: Element?){
-        if(!flagSound){
+        flagSound = if(!flagSound){
             preferences.edit().putString(SOUND_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
             ivHeart.setImageResource(R.drawable.ic_full_heart)
-            flagSound = true
-        }
-        else{
+            true
+        } else{
             var vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9,R.raw.svfishbite)
             preferences.edit().putString(SOUND_PREFS, moshi.adapter(Element::class.java).toJson(vacio)).apply()
             ivHeart.setImageResource(R.drawable.ic_empty_heart)
-            flagSound = false
+            false
         }
     }
 
-
-
     private fun saveFavoriteFood(element: Element?) {
-        if(!flag){
+        flag = if(!flag){
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(element)).apply()
             ivStar.setImageResource(R.drawable.ic_full_star)
-            flag = true
-        }
-        else{
+            true
+        } else{
             var vacio = Element("",AssignedImage.IMAGE_1,AssignedText.TEXT_9,R.raw.sound1)
             preferences.edit().putString(USER_PREFS, moshi.adapter(Element::class.java).toJson(vacio)).apply()
             ivStar.setImageResource(R.drawable.ic_empty_star)
-            flag = false
+            false
         }
 
     }
