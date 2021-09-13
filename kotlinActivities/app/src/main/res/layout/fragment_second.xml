@@ -27,26 +27,25 @@
             android:layout_margin="20dp"
             app:layout_constraintTop_toBottomOf="@+id/imViewSecundario"
             app:layout_constraintBottom_toTopOf="@id/imViewStar"/>
+
         <ImageView
             android:id="@+id/imViewStar"
-            android:src="@drawable/ic_empty_star"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintStart_toStartOf="@id/imViewSecundario"
+            android:src="@drawable/ic_empty_star"
+            app:layout_constraintStart_toEndOf="@+id/imViewHeart"
             app:layout_constraintEnd_toEndOf="@id/imViewSecundario"
             app:layout_constraintTop_toBottomOf="@id/txtViewSecundario"
-            app:layout_constraintBottom_toTopOf="@id/btnAtras1"/>
-
-        <Button
-            android:id="@+id/btnAtras1"
-            android:text="@string/text_goBack"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imViewStar"
             app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageView
+            android:id="@+id/imViewHeart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_empty_heart"
+            app:layout_constraintStart_toStartOf="@+id/imViewSecundario"
+            app:layout_constraintEnd_toStartOf="@+id/imViewStar"
+            app:layout_constraintTop_toTopOf="@+id/imViewStar"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

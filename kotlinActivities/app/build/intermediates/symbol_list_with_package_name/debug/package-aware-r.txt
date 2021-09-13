@@ -1793,9 +1793,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable fresa
 drawable ic_clock_black_24dp
+drawable ic_empty_heart
 drawable ic_empty_star
 drawable ic_flecha_derecha
 drawable ic_flecha_izquierda
+drawable ic_full_heart
 drawable ic_full_star
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1806,6 +1808,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_naranja
+drawable ic_play_sound
 drawable ic_queso
 drawable ic_uvas
 drawable ic_zanahoria
@@ -2064,7 +2067,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id imViewBack
+id imViewHeart
 id imViewNext
+id imViewPlay
 id imViewPrincipal
 id imViewPrincipalF
 id imViewSecundario
@@ -2498,6 +2503,16 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw sound1
+raw sound10
+raw sound2
+raw sound3
+raw sound4
+raw sound5
+raw sound6
+raw sound7
+raw sound8
+raw sound9
 raw svfishbite
 string abc_action_bar_home_description
 string abc_action_bar_up_description

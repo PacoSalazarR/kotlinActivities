@@ -3,7 +3,7 @@ package com.example.kotlinactivities;
 import java.lang.System;
 
 @kotlinx.android.parcel.Parcelize()
-@kotlin.Metadata(mv = {1, 5, 1}, k = 1, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0007\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB\'\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\bJ\t\u0010\u0015\u001a\u00020\u0016H\u00d6\u0001J\u0019\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0016H\u00d6\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014\u00a8\u0006\u001d"}, d2 = {"Lcom/example/kotlinactivities/Element;", "Landroid/os/Parcelable;", "name", "", "image", "Lcom/example/kotlinactivities/AssignedImage;", "texto", "Lcom/example/kotlinactivities/AssignedText;", "(Ljava/lang/String;Lcom/example/kotlinactivities/AssignedImage;Lcom/example/kotlinactivities/AssignedText;)V", "getImage", "()Lcom/example/kotlinactivities/AssignedImage;", "setImage", "(Lcom/example/kotlinactivities/AssignedImage;)V", "getName", "()Ljava/lang/String;", "setName", "(Ljava/lang/String;)V", "getTexto", "()Lcom/example/kotlinactivities/AssignedText;", "setTexto", "(Lcom/example/kotlinactivities/AssignedText;)V", "describeContents", "", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "Companion", "app_debug"})
+@kotlin.Metadata(mv = {1, 5, 1}, k = 1, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0013\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0007\u0018\u0000 !2\u00020\u0001:\u0001!B1\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\t\u0010\u001b\u001a\u00020\tH\u00d6\u0001J\u0019\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\tH\u00d6\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u001a\u0010\b\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001a\u00a8\u0006\""}, d2 = {"Lcom/example/kotlinactivities/Element;", "Landroid/os/Parcelable;", "name", "", "image", "Lcom/example/kotlinactivities/AssignedImage;", "texto", "Lcom/example/kotlinactivities/AssignedText;", "sound", "", "(Ljava/lang/String;Lcom/example/kotlinactivities/AssignedImage;Lcom/example/kotlinactivities/AssignedText;I)V", "getImage", "()Lcom/example/kotlinactivities/AssignedImage;", "setImage", "(Lcom/example/kotlinactivities/AssignedImage;)V", "getName", "()Ljava/lang/String;", "setName", "(Ljava/lang/String;)V", "getSound", "()I", "setSound", "(I)V", "getTexto", "()Lcom/example/kotlinactivities/AssignedText;", "setTexto", "(Lcom/example/kotlinactivities/AssignedText;)V", "describeContents", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "Companion", "app_debug"})
 @com.squareup.moshi.JsonClass(generateAdapter = true)
 public final class Element implements android.os.Parcelable {
     @org.jetbrains.annotations.NotNull()
@@ -12,6 +12,7 @@ public final class Element implements android.os.Parcelable {
     private com.example.kotlinactivities.AssignedImage image;
     @org.jetbrains.annotations.Nullable()
     private com.example.kotlinactivities.AssignedText texto;
+    private int sound;
     @org.jetbrains.annotations.NotNull()
     public static final com.example.kotlinactivities.Element.Companion Companion = null;
     @org.jetbrains.annotations.NotNull()
@@ -25,7 +26,7 @@ public final class Element implements android.os.Parcelable {
     public Element(@org.jetbrains.annotations.NotNull()
     java.lang.String name, @org.jetbrains.annotations.Nullable()
     com.example.kotlinactivities.AssignedImage image, @org.jetbrains.annotations.Nullable()
-    com.example.kotlinactivities.AssignedText texto) {
+    com.example.kotlinactivities.AssignedText texto, int sound) {
         super();
     }
     
@@ -54,6 +55,13 @@ public final class Element implements android.os.Parcelable {
     
     public final void setTexto(@org.jetbrains.annotations.Nullable()
     com.example.kotlinactivities.AssignedText p0) {
+    }
+    
+    public final int getSound() {
+        return 0;
+    }
+    
+    public final void setSound(int p0) {
     }
     
     @java.lang.Override()

@@ -23,7 +23,7 @@ import kotlin.text.buildString
 public class ElementJsonAdapter(
   moshi: Moshi
 ) : JsonAdapter<Element>() {
-  private val options: JsonReader.Options = JsonReader.Options.of("name", "image", "texto")
+  private val options: JsonReader.Options = JsonReader.Options.of("name", "image", "texto", "sound")
 
   private val stringAdapter: JsonAdapter<String> = moshi.adapter(String::class.java, emptySet(),
       "name")
@@ -33,6 +33,8 @@ public class ElementJsonAdapter(
 
   private val nullableAssignedTextAdapter: JsonAdapter<AssignedText?> =
       moshi.adapter(AssignedText::class.java, emptySet(), "texto")
+
+  private val intAdapter: JsonAdapter<Int> = moshi.adapter(Int::class.java, emptySet(), "sound")
 
   @Volatile
   private var constructorRef: Constructor<Element>? = null
@@ -44,6 +46,7 @@ public class ElementJsonAdapter(
     var name: String? = null
     var image: AssignedImage? = null
     var texto: AssignedText? = null
+    var sound: Int? = 0
     var mask0 = -1
     reader.beginObject()
     while (reader.hasNext()) {
@@ -63,6 +66,11 @@ public class ElementJsonAdapter(
           // $mask = $mask and (1 shl 2).inv()
           mask0 = mask0 and 0xfffffffb.toInt()
         }
+        3 -> {
+          sound = intAdapter.fromJson(reader) ?: throw Util.unexpectedNull("sound", "sound", reader)
+          // $mask = $mask and (1 shl 3).inv()
+          mask0 = mask0 and 0xfffffff7.toInt()
+        }
         -1 -> {
           // Unknown name, skip it.
           reader.skipName()
@@ -71,24 +79,26 @@ public class ElementJsonAdapter(
       }
     }
     reader.endObject()
-    if (mask0 == 0xfffffff8.toInt()) {
+    if (mask0 == 0xfffffff0.toInt()) {
       // All parameters with defaults are set, invoke the constructor directly
       return  Element(
           name = name as String,
           image = image,
-          texto = texto
+          texto = texto,
+          sound = sound as Int
       )
     } else {
       // Reflectively invoke the synthetic defaults constructor
       @Suppress("UNCHECKED_CAST")
       val localConstructor: Constructor<Element> = this.constructorRef ?:
           Element::class.java.getDeclaredConstructor(String::class.java, AssignedImage::class.java,
-          AssignedText::class.java, Int::class.javaPrimitiveType,
+          AssignedText::class.java, Int::class.javaPrimitiveType, Int::class.javaPrimitiveType,
           Util.DEFAULT_CONSTRUCTOR_MARKER).also { this.constructorRef = it }
       return localConstructor.newInstance(
           name,
           image,
           texto,
+          sound,
           mask0,
           /* DefaultConstructorMarker */ null
       )
@@ -106,6 +116,8 @@ public class ElementJsonAdapter(
     nullableAssignedImageAdapter.toJson(writer, value_.image)
     writer.name("texto")
     nullableAssignedTextAdapter.toJson(writer, value_.texto)
+    writer.name("sound")
+    intAdapter.toJson(writer, value_.sound)
     writer.endObject()
   }
 }

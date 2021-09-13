@@ -1792,9 +1792,11 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable fresa 0x7f070093
 int drawable ic_clock_black_24dp 0x7f070065
+int drawable ic_empty_heart 0x7f07009f
 int drawable ic_empty_star 0x7f07009d
 int drawable ic_flecha_derecha 0x7f07009b
 int drawable ic_flecha_izquierda 0x7f07009c
+int drawable ic_full_heart 0x7f0700a0
 int drawable ic_full_star 0x7f07009e
 int drawable ic_keyboard_black_24dp 0x7f070066
 int drawable ic_launcher_background 0x7f070067
@@ -1805,6 +1807,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f07006a
 int drawable ic_mtrl_chip_checked_circle 0x7f07006b
 int drawable ic_mtrl_chip_close_circle 0x7f07006c
 int drawable ic_naranja 0x7f070095
+int drawable ic_play_sound 0x7f0700a1
 int drawable ic_queso 0x7f070096
 int drawable ic_uvas 0x7f070097
 int drawable ic_zanahoria 0x7f070098
@@ -2063,7 +2066,9 @@ int id ifRoom 0x7f0800cf
 int id ignore 0x7f0800d0
 int id ignoreRequest 0x7f0800d1
 int id imViewBack 0x7f0801d3
+int id imViewHeart 0x7f0801e2
 int id imViewNext 0x7f0801d4
+int id imViewPlay 0x7f0801e3
 int id imViewPrincipal 0x7f0801d5
 int id imViewPrincipalF 0x7f0801e1
 int id imViewSecundario 0x7f0801d6
@@ -2497,6 +2502,16 @@ int layout text_view_without_line_height 0x7f0b0070
 int mipmap ic_launcher 0x7f0c0000
 int mipmap ic_launcher_round 0x7f0c0001
 int plurals mtrl_badge_content_description 0x7f0d0000
+int raw sound1 0x7f120001
+int raw sound10 0x7f120002
+int raw sound2 0x7f120003
+int raw sound3 0x7f120004
+int raw sound4 0x7f120005
+int raw sound5 0x7f120006
+int raw sound6 0x7f120007
+int raw sound7 0x7f120008
+int raw sound8 0x7f120009
+int raw sound9 0x7f12000a
 int raw svfishbite 0x7f120000
 int string abc_action_bar_home_description 0x7f0e0000
 int string abc_action_bar_up_description 0x7f0e0001
